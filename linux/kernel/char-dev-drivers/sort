@@ -1,0 +1,69 @@
+Module                  Size  Used by
+nls_iso8859_1          16384  1
+intel_rapl             20480  0
+x86_pkg_temp_thermal    16384  0
+intel_powerclamp       16384  0
+coretemp               16384  0
+kvm                   540672  0
+irqbypass              16384  1 kvm
+crct10dif_pclmul       16384  0
+crc32_pclmul           16384  0
+snd_hda_codec_hdmi     53248  1
+eeepc_wmi              16384  0
+asus_wmi               28672  1 eeepc_wmi
+sparse_keymap          16384  1 asus_wmi
+snd_hda_codec_realtek    86016  1
+snd_hda_codec_generic    77824  1 snd_hda_codec_realtek
+aesni_intel           167936  0
+aes_x86_64             20480  1 aesni_intel
+snd_hda_intel          36864  5
+lrw                    16384  1 aesni_intel
+gf128mul               16384  1 lrw
+snd_hda_codec         135168  4 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_intel
+snd_hda_core           73728  5 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel
+glue_helper            16384  1 aesni_intel
+snd_hwdep              16384  1 snd_hda_codec
+input_leds             16384  0
+joydev                 20480  0
+ablk_helper            16384  1 aesni_intel
+cryptd                 20480  2 aesni_intel,ablk_helper
+snd_pcm               106496  4 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_hda_core
+serio_raw              16384  0
+8250_fintek            16384  0
+shpchp                 36864  0
+lpc_ich                24576  0
+snd_seq_midi           16384  0
+snd_seq_midi_event     16384  1 snd_seq_midi
+snd_rawmidi            32768  1 snd_seq_midi
+snd_seq                69632  2 snd_seq_midi_event,snd_seq_midi
+snd_seq_device         16384  3 snd_seq,snd_rawmidi,snd_seq_midi
+snd_timer              32768  2 snd_pcm,snd_seq
+snd                    81920  21 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_seq,snd_rawmidi,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_seq_device
+soundcore              16384  1 snd
+mei_me                 36864  0
+mei                    98304  1 mei_me
+mac_hid                16384  0
+parport_pc             32768  1
+ppdev                  20480  0
+lp                     20480  0
+parport                49152  3 lp,ppdev,parport_pc
+autofs4                40960  2
+hid_generic            16384  0
+usbhid                 49152  0
+hid                   118784  2 hid_generic,usbhid
+i915                 1208320  5
+psmouse               126976  0
+i2c_algo_bit           16384  1 i915
+drm_kms_helper        147456  1 i915
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+fb_sys_fops            16384  1 drm_kms_helper
+drm                   364544  6 i915,drm_kms_helper
+r8169                  81920  0
+ahci                   36864  4
+libahci                32768  1 ahci
+mii                    16384  1 r8169
+wmi                    20480  1 asus_wmi
+video                  40960  2 i915,asus_wmi
+fjes                   28672  0
